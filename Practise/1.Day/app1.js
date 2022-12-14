@@ -83,6 +83,19 @@
 
 
     //Ornek-10
+// let isim = prompt("Lutfen isim giriniz");
+// if(!isim){
+//     alert("Isminizi giriniz");
+// }
+// else{
+//     alert(`Hosgeldiniz Sayin ${isim}`);
+//}
 
-    
 
+//Ornek-11
+
+    let giris = true;
+    let cikis = false;
+    console.log(!giris || cikis || giris);//true
+    console.log(!giris||cikis);//false
+    console.log((giris&&cikis) || !cikis && !giris);//false
