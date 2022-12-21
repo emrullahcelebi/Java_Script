@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="message">Artik <span style="display: none;">javascript</span> bitmek usere..</p>
+
+
+    <script>
+
+        const messageEl= document.getElementById("message");
+console.log(messageEl.innerText);/* sadece sadece text olan kismi alir */
+console.log(messageEl.innerHTML);/* icindeki html tag larini da alir */
+console.log(messageEl.textContent);/* gizli olan kisimlari da getiri */
+
+    </script>
+</body>
+</html>
