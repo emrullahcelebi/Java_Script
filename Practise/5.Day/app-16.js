@@ -122,3 +122,17 @@ const notlar = [
 { ad: "Sude Canlı", not: 94 },
 { ad: "Bade Sert", not: 72,},
 ];
+
+let ort = notlar.reduce((x,y)=>x+y.not,0);
+ort = (ort/NodeFilter.length).toFixed(2);
+
+const yeniNotlar = notlar.map(item=>{
+    if(item.not>=ort){
+        item.not = (item.not*1.2).toFixed(2);
+    }else{
+        item.not =(item.not*1.1).toFixed(2);
+    }
+    return  item;
+});
+
+console.log(yeniNotlar);

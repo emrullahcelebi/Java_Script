@@ -197,14 +197,26 @@ window.addEventListener("DOMContentLoaded",()=>{
     },["all"]);
 
     const butonlar = categories.map((category)=>{
-        return `<button>${category}</button>`;
+        return `<button id=${category}>${category}</button>`;
     }).join("");
 
     butonEl.innerHTM=butonlar;
 
     const filterBtns=buton.querySelectorAll("button");
     filterBtns.forEach((btn)=>{
-        btn.
+        btn.addEventListener("click",(e)=>{
+            const category=e.target.id;
+
+            const menuCategory=listem.filter((menuItem)=>{
+                if(menuItem.category==category)return menuItem;
+
+            });
+            if(category =="all"){
+                itemYerlestir(listem);
+            }else{
+                itemYerlestir(menuCategory);
+            }
+        });
     });
 
    }
