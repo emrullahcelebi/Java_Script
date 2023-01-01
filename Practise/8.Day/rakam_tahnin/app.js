@@ -35,12 +35,12 @@ const sayiTahmin = () => {
 };
 
 yukari.addEventListener("click", () => {
-  alt = tahmin + 1;
+  alt = tahmin;
   sayiTahmin();
 });
 
 asagi.addEventListener("click", () => {
-  ust = tahmin - 1;
+  ust = tahmin;
   sayiTahmin();
 });
 
